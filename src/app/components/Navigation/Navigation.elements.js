@@ -62,6 +62,7 @@ export const OptionHeading = styled.span`
   color: #b5b9c3;
   padding: 0.4rem 0.8rem;
   font-weight: 500;
+  text-transform: uppercase;
 `;
 
 // Element: OptionItem
