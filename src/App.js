@@ -1,9 +1,10 @@
 // Import: Packages
 import React from "react";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
 // Import: Components, Pages
-import { Navigation } from "./app/components";
+import { Navigation, TopBar } from "./app/components";
+import { Dashboard } from "./app/pages";
 
 // Component: App
 export default function App() {
@@ -15,7 +16,10 @@ export default function App() {
             <Navigation />
           </Side>
 
-          <Main>main</Main>
+          <Main>
+            <TopBar />
+            <Dashboard />
+          </Main>
         </Layout>
       </Container>
     </>

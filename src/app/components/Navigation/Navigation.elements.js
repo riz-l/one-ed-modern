@@ -26,11 +26,10 @@ export const Logo = styled.div`
   align-items: center;
   display: flex;
   justify-content: flex-start;
-  padding: 0.4rem 0.8rem;
+  padding: 0 0.8rem;
   width: 100%;
 
   & span {
-    color: #40444f;
     font-size: 2rem;
     font-weight: 600;
   }
@@ -59,7 +58,7 @@ export const OptionContainer = styled.div`
 
 // Element: OptionHeading
 export const OptionHeading = styled.span`
-  color: #b5b9c3;
+  color: #515a62;
   padding: 0.4rem 0.8rem;
   font-weight: 500;
   text-transform: uppercase;
@@ -78,14 +77,14 @@ export const OptionItem = styled.div`
   width: 100%;
 
   & svg {
-    fill: #b5b9c3;
+    fill: #8a8a8a;
     height: 20px;
     margin-right: 0.8rem;
     width: 20px;
   }
 
   & span {
-    color: #b5b9c3;
+    color: #8a8a8a;
     transition: all 100ms linear;
   }
 
@@ -124,14 +123,14 @@ export const SettingsItem = styled.div`
   width: 100%;
 
   & svg {
-    fill: #b5b9c3;
+    fill: #8a8a8a;
     height: 20px;
     margin-right: 0.8rem;
     width: 20px;
   }
 
   & span {
-    color: #b5b9c3;
+    color: #8a8a8a;
     transition: all 100ms linear;
   }
 

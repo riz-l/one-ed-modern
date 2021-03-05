@@ -1,2 +1,2 @@
-// Export: Test
-// export { default as Test } from "./Test/Test.component";
+// Export: Dashboard
+export { default as Dashboard } from "./Dashboard/Dashboard.component";
