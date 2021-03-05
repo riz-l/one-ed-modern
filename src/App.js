@@ -1,26 +1,58 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// Import: Packages
+import React from "react";
+import styled from "styled-components";
 
-function App() {
+// Import: Components, Pages
+import { Navigation } from "./app/components";
+
+// Component: App
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Container>
+        <Layout>
+          <Side>
+            <Navigation />
+          </Side>
+
+          <Main>main</Main>
+        </Layout>
+      </Container>
+    </>
   );
 }
 
-export default App;
+// Element: Container
+const Container = styled.div`
+  background-color: #ffffff;
+  height: 100%;
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+`;
+
+// Element: Layout
+const Layout = styled.div`
+  align-items: center;
+  display: flex;
+  height: 100%;
+  min-height: 100vh;
+  justify-content: space-between;
+  width: 100%;
+`;
+
+// Element: Side
+const Side = styled.div`
+  flex: 280px;
+  height: 100%;
+  min-height: 100vh;
+  width: 280px;
+`;
+
+// Element: Main
+const Main = styled.div`
+  flex: auto;
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+`;
