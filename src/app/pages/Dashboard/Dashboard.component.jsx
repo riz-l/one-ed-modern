@@ -4,7 +4,6 @@ import React from "react";
 // Import: Elements
 import {
   Container,
-  Heading,
   ListWrapper,
   SummaryWrapper,
   Wrapper,
@@ -18,10 +17,6 @@ export default function Dashboard() {
   return (
     <>
       <Container>
-        <Heading>
-          <h1>Dashboard</h1>
-        </Heading>
-
         <Wrapper>
           <ListWrapper>
             <PatientList />
