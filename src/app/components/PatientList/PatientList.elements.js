@@ -50,7 +50,6 @@ export const TableWrapper = styled.div`
 export const Table = styled.table`
   border-collapse: collapse;
   height: 100%;
-  /* padding: 2rem; */
   text-align: left;
   width: 100%;
 `;

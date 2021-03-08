@@ -45,8 +45,6 @@ export default function PatientList() {
     getTableData();
   }, []);
 
-  console.log(tableData);
-
   // columns: columns from API
   const columns = useMemo(
     () => [
@@ -85,6 +83,7 @@ export default function PatientList() {
 
   // Table: Accepts columns and data
   const tableInstance = useTable({ columns, data });
+
   // Destructures all hooks needed by the table
   const {
     getTableProps,
