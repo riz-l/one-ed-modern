@@ -63,3 +63,7 @@ $ npm install
 - `react-detect-offline`
 
   - Used to detect online/offline state of React application
+
+- `react-table`
+
+  - Used to create tables

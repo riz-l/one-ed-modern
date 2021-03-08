@@ -20,7 +20,7 @@ import {
 export default function TopBar() {
   return (
     <>
-      <Container>
+      <Container data-testid={"topbar"}>
         <Wrapper>
           <Options>
             <OptionItem>

@@ -32,7 +32,7 @@ import {
 export default function Navigation() {
   return (
     <>
-      <Container>
+      <Container data-testid={"navigation"}>
         <Wrapper>
           {/* Logo */}
           <Logo>

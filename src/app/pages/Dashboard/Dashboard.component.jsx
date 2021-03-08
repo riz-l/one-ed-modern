@@ -5,7 +5,7 @@ import React from "react";
 import {
   Container,
   ListWrapper,
-  SummaryWrapper,
+  // SummaryWrapper,
   Wrapper,
 } from "./Dashboard.elements";
 
@@ -16,13 +16,13 @@ import { PatientList } from "../../components";
 export default function Dashboard() {
   return (
     <>
-      <Container>
+      <Container data-testid={"dashboard"}>
         <Wrapper>
           <ListWrapper>
             <PatientList />
           </ListWrapper>
 
-          <SummaryWrapper>b</SummaryWrapper>
+          {/* <SummaryWrapper>b</SummaryWrapper> */}
         </Wrapper>
       </Container>
     </>
