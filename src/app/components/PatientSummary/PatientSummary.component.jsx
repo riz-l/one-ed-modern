@@ -1,6 +1,5 @@
 // Import: Packages
 import React from "react";
-import { Header } from "../PatientList/PatientList.elements";
 
 // Import: Assets
 import { ReactComponent as PatientSummaryIcon } from "../../../assets/img/icon/patientSummary-patient.svg";
@@ -8,6 +7,7 @@ import { ReactComponent as PatientSummaryIcon } from "../../../assets/img/icon/p
 // Import: Elements
 import {
   Container,
+  Header,
   DetailsWrapper,
   IconContainer,
   NameContainer,

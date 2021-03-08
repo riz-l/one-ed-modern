@@ -31,7 +31,7 @@ export const Header = styled.div`
   width: 100%;
 
   & h2 {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 500;
     padding: 2rem;
   }
