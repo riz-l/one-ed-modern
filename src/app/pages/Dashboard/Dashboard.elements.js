@@ -4,7 +4,8 @@ import styled from "styled-components/macro";
 // Element: Container
 export const Container = styled.div`
   height: auto;
-  max-height: calc(100vh - 10vh);
+  max-height: calc(100vh - 78.4px);
+  min-height: calc(100vh - 78.4px);
   width: 100%;
 `;
 

@@ -3,14 +3,20 @@ import styled from "styled-components/macro";
 
 // Element: Container
 export const Container = styled.div`
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   height: auto;
-  max-height: 10vh;
+  max-height: auto;
+  min-height: auto;
+  position: sticky;
+  -webkit-position: sticky;
+  top: 0;
   width: 100%;
+  z-index: 2;
 `;
 
 // Element: Wrapper
 export const Wrapper = styled.div`
-  padding: 0.4rem 0.8rem;
   width: 100%;
 `;
 
@@ -37,8 +43,8 @@ export const OptionItem = styled.div`
 
   & svg {
     fill: #8a8a8a;
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
   }
 
   &:hover {

@@ -2,7 +2,7 @@
 import React from "react";
 
 // Import: Assets
-import { ReactComponent as TopNotificationIcon } from "../../../assets/img/icon/topbar-notification.svg";
+// import { ReactComponent as TopNotificationIcon } from "../../../assets/img/icon/topbar-notification.svg";
 import { ReactComponent as TopUserIcon } from "../../../assets/img/icon/topbar-user.svg";
 import { ReactComponent as TopDownarrowIcon } from "../../../assets/img/icon/topbar-downarrow.svg";
 
@@ -23,10 +23,6 @@ export default function TopBar() {
       <Container data-testid={"topbar"}>
         <Wrapper>
           <Options>
-            <OptionItem>
-              <TopNotificationIcon />
-            </OptionItem>
-
             <OptionItem>
               <TopUserIcon />
               <OptionInfo>

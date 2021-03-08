@@ -40,6 +40,7 @@ const Layout = styled.div`
   align-items: center;
   display: flex;
   height: 100%;
+  max-height: 100vh;
   min-height: 100vh;
   justify-content: space-between;
   width: 100%;
@@ -49,6 +50,7 @@ const Layout = styled.div`
 const Side = styled.div`
   flex: 280px;
   height: 100%;
+  max-height: 100vh;
   min-height: 100vh;
   width: 280px;
 `;
@@ -57,6 +59,8 @@ const Side = styled.div`
 const Main = styled.div`
   flex: auto;
   height: 100%;
+  max-height: 100vh;
   min-height: 100vh;
+  overflow: hidden;
   width: 100%;
 `;

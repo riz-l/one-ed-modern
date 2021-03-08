@@ -5,7 +5,7 @@ import React from "react";
 import {
   Container,
   ListWrapper,
-  // SummaryWrapper,
+  SummaryWrapper,
   Wrapper,
 } from "./Dashboard.elements";
 
@@ -22,7 +22,7 @@ export default function Dashboard() {
             <PatientList />
           </ListWrapper>
 
-          {/* <SummaryWrapper>b</SummaryWrapper> */}
+          <SummaryWrapper>b</SummaryWrapper>
         </Wrapper>
       </Container>
     </>

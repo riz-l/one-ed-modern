@@ -5,7 +5,16 @@ import { allPatientDetails } from "../../../utils/axios";
 import { useTable } from "react-table";
 
 // Import: Elements
-import { Container, Wrapper } from "./PatientList.elements";
+import {
+  Container,
+  Header,
+  Table,
+  TableData,
+  TableDataRow,
+  TableHeading,
+  TableWrapper,
+  Wrapper,
+} from "./PatientList.elements";
 
 // Component: PatientList
 export default function PatientList() {
@@ -89,59 +98,44 @@ export default function PatientList() {
     <>
       <Container data-testid={"patientList"}>
         <Wrapper>
+          <Header>
+            <h2>Patient List</h2>
+          </Header>
+
           {isLoading ? (
             <h2>Loading...</h2>
           ) : (
-            <table
-              {...getTableProps()}
-              style={{
-                width: "100%",
-                padding: "0 2rem 2rem 2rem",
-              }}
-            >
-              <thead>
-                {headerGroups.map((headerGroup) => (
-                  <tr {...headerGroup.getHeaderGroupProps()}>
-                    {headerGroup.headers.map((column) => (
-                      <th
-                        {...column.getHeaderProps()}
-                        style={{
-                          borderBottom: "3px solid red",
-                          background: "aliceblue",
-                          color: "black",
-                          fontWeight: "bold",
-                        }}
-                      >
-                        {column.render("Header")}
-                      </th>
-                    ))}
-                  </tr>
-                ))}
-              </thead>
-              <tbody {...getTableBodyProps()}>
-                {rows.map((row) => {
-                  prepareRow(row);
-                  return (
-                    <tr {...row.getRowProps()}>
-                      {row.cells.map((cell) => {
-                        return (
-                          <td
-                            {...cell.getCellProps()}
-                            style={{
-                              padding: "10px",
-                              border: "1px solid gray",
-                              background: "papayawhip",
-                            }}
-                          >
-                            {cell.render("Cell")}
-                          </td>
-                        );
-                      })}
+            <TableWrapper>
+              <Table {...getTableProps()}>
+                <thead>
+                  {headerGroups.map((headerGroup) => (
+                    <tr {...headerGroup.getHeaderGroupProps()}>
+                      {headerGroup.headers.map((column) => (
+                        <TableHeading {...column.getHeaderProps()}>
+                          {column.render("Header")}
+                        </TableHeading>
+                      ))}
                     </tr>
-                  );
-                })}
-              </tbody>
-            </table>
+                  ))}
+                </thead>
+                <tbody {...getTableBodyProps()}>
+                  {rows.map((row) => {
+                    prepareRow(row);
+                    return (
+                      <TableDataRow {...row.getRowProps()}>
+                        {row.cells.map((cell) => {
+                          return (
+                            <TableData {...cell.getCellProps()}>
+                              {cell.render("Cell")}
+                            </TableData>
+                          );
+                        })}
+                      </TableDataRow>
+                    );
+                  })}
+                </tbody>
+              </Table>
+            </TableWrapper>
           )}
         </Wrapper>
       </Container>
