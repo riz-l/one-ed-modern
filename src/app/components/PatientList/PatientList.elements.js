@@ -41,9 +41,10 @@ export const Header = styled.div`
 // Element: TableWrapper
 export const TableWrapper = styled.div`
   height: 100%;
-  overflow-y: auto;
   margin-bottom: 2rem;
-  padding: 0 2rem 2rem 2rem;
+  overflow-y: auto;
+  /* padding: 0 2rem 2rem 2rem; */
+  padding: 0 0 2rem 2rem;
   width: 100%;
 `;
 

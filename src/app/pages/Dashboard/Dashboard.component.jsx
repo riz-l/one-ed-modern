@@ -10,7 +10,7 @@ import {
 } from "./Dashboard.elements";
 
 // Import: Components
-import { PatientList } from "../../components";
+import { PatientList, PatientSummary } from "../../components";
 
 // Page: Dashboard
 export default function Dashboard() {
@@ -22,7 +22,9 @@ export default function Dashboard() {
             <PatientList />
           </ListWrapper>
 
-          <SummaryWrapper>b</SummaryWrapper>
+          <SummaryWrapper>
+            <PatientSummary />
+          </SummaryWrapper>
         </Wrapper>
       </Container>
     </>

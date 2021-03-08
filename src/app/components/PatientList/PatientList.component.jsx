@@ -74,6 +74,14 @@ export default function PatientList() {
             ? "N/A"
             : patient.PD_Reported_Condition,
       },
+      {
+        Header: "Warning Score",
+        accessor: "warningScore",
+      },
+      {
+        Header: "Triage Category",
+        accessor: "triageCategory",
+      },
     ],
     []
   );

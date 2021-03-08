@@ -29,7 +29,6 @@ export const ListWrapper = styled.div`
 
 // Element: SummaryWrapper
 export const SummaryWrapper = styled.div`
-  background-color: rebeccapurple;
   flex: 1;
   height: 100%;
   max-height: calc(100vh - 10vh);
