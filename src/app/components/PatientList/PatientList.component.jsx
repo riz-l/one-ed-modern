@@ -38,7 +38,7 @@ export default function PatientList() {
 
   console.log(tableData);
 
-  // columns: Table columns
+  // columns: columns from API
   const columns = useMemo(
     () => [
       {
@@ -53,7 +53,8 @@ export default function PatientList() {
       },
       {
         Header: "Age",
-        accessor: (patient) => (patient.PD_Age === "" ? "N/A" : patient.PD_Age),
+        accessor: (patient) =>
+          patient.PD_Age_Yrs === "" ? "N/A" : patient.PD_Age_Yrs,
       },
       {
         Header: "Date of Birth",
@@ -70,25 +71,7 @@ export default function PatientList() {
     []
   );
 
-  // data: Table data
-  // const data = useMemo(
-  //   () => [
-  //     {
-  //       col1: "Hello",
-  //       col2: "World",
-  //     },
-  //     {
-  //       col1: "react-table",
-  //       col2: "rocks",
-  //     },
-  //     {
-  //       col1: "whatever",
-  //       col2: "you want",
-  //     },
-  //   ],
-  //   []
-  // );
-
+  // data: tableData from API
   const data = tableData;
 
   // Table: Accepts columns and data
@@ -113,7 +96,7 @@ export default function PatientList() {
               {...getTableProps()}
               style={{
                 width: "100%",
-                padding: "2rem",
+                padding: "0 2rem 2rem 2rem",
               }}
             >
               <thead>
