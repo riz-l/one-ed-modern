@@ -43,23 +43,28 @@ export default function PatientList() {
     () => [
       {
         Header: "Firstname",
-        accessor: "PD_Firstname",
+        accessor: (patient) =>
+          patient.PD_Firstname === "" ? "N/A" : patient.PD_Firstname,
       },
       {
         Header: "Surname",
-        accessor: "PD_Surname",
+        accessor: (patient) =>
+          patient.PD_Surname === "" ? "N/A" : patient.PD_Surname,
       },
       {
         Header: "Age",
-        accessor: "PD_Age",
+        accessor: (patient) => (patient.PD_Age === "" ? "N/A" : patient.PD_Age),
       },
       {
         Header: "Date of Birth",
-        accessor: "PD_DOB",
+        accessor: (patient) => (patient.PD_DOB === "" ? "N/A" : patient.PD_DOB),
       },
       {
         Header: "Condition",
-        accessor: "PD_Reported_Condition",
+        accessor: (patient) =>
+          patient.PD_Reported_Condition === ""
+            ? "N/A"
+            : patient.PD_Reported_Condition,
       },
     ],
     []
