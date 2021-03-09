@@ -41,11 +41,11 @@ export default function PatientSummary() {
               </SummaryHeader>
 
               <SummaryDetails>
-                <p>Age: 24</p>
-                <p>Reported Condition: A00 - Cardiac Arrest</p>
-                <p>Gender: Female</p>
-                <p>Allergies: Nuts, milk, silicon</p>
-                <p>Medications: Strong painkillers, antibiotics</p>
+                <span>Age: 24</span>
+                <span>Reported Condition: A00 - Cardiac Arrest</span>
+                <span>Gender: Female</span>
+                <span>Allergies: Nuts, milk, silicon</span>
+                <span>Medications: Strong painkillers, antibiotics</span>
               </SummaryDetails>
             </SummaryContainer>
           </DetailsWrapper>
