@@ -4,7 +4,7 @@ import styled from "styled-components/macro";
 // Element: Container
 export const Container = styled.div`
   background-color: #ffffff;
-  /* border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   height: auto;
   max-height: auto;
   min-height: auto;
@@ -48,7 +48,8 @@ export const OptionItem = styled.div`
   }
 
   &:hover {
-    background-color: #f7f7f7;
+    /* background-color: #f7f7f7; */
+    background-color: #e5f3f6;
     transition: all 100ms linear;
   }
 `;

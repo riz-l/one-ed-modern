@@ -20,7 +20,7 @@ export const Wrapper = styled.div`
 
 // Element: ListWrapper
 export const ListWrapper = styled.div`
-  flex: 1.75;
+  flex: 0.5;
   height: 100%;
   max-height: calc(100vh - 10vh);
   min-height: calc(100vh - 10vh);

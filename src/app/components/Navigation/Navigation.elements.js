@@ -4,7 +4,7 @@ import styled from "styled-components/macro";
 // Element: Container
 export const Container = styled.div`
   background-color: #ffffff;
-  /* border-right: 1px solid rgba(0, 0, 0, 0.1); */
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
   height: 100%;
   min-height: 100vh;
   width: 100%;
@@ -32,6 +32,7 @@ export const Logo = styled.div`
   & span {
     font-size: 2rem;
     font-weight: 600;
+    text-transform: uppercase;
   }
 `;
 
@@ -58,7 +59,8 @@ export const OptionContainer = styled.div`
 
 // Element: OptionHeading
 export const OptionHeading = styled.span`
-  color: #515a62;
+  /* color: #515a62; */
+  color: #00687a;
   padding: 0.4rem 0.8rem;
   font-weight: 500;
   text-transform: uppercase;
@@ -72,28 +74,32 @@ export const OptionItem = styled.div`
   cursor: pointer;
   display: flex;
   justify-content: flex-start;
-  padding: 0.4rem 0.8rem;
+  padding: 0.6rem 0.8rem;
   transition: all 100ms linear;
   width: 100%;
 
   & svg {
-    fill: #8a8a8a;
+    /* fill: #8a8a8a; */
+    fill: #44444b;
     height: 20px;
     margin-right: 0.8rem;
     width: 20px;
   }
 
   & span {
-    color: #8a8a8a;
+    /* color: #8a8a8a; */
+    color: #44444b;
     transition: all 100ms linear;
   }
 
   &:hover {
-    background-color: #f7f7f7;
+    /* background-color: #f7f7f7; */
+    background-color: #e5f3f6;
     transition: all 100ms linear;
 
     & span {
-      color: #1990fe;
+      /* color: #1990fe; */
+      color: #008ba3;
       transition: all 100ms linear;
     }
   }
@@ -118,28 +124,32 @@ export const SettingsItem = styled.div`
   cursor: pointer;
   display: flex;
   justify-content: flex-start;
-  padding: 0.4rem 0.8rem;
+  padding: 0.6rem 0.8rem;
   transition: all 100ms linear;
   width: 100%;
 
   & svg {
-    fill: #8a8a8a;
+    /* fill: #8a8a8a; */
+    fill: #44444b;
     height: 20px;
     margin-right: 0.8rem;
     width: 20px;
   }
 
   & span {
-    color: #8a8a8a;
+    /* color: #8a8a8a; */
+    color: #44444b;
     transition: all 100ms linear;
   }
 
   &:hover {
-    background-color: #f7f7f7;
+    /* background-color: #f7f7f7; */
+    background-color: #e5f3f6;
     transition: all 100ms linear;
 
     & span {
-      color: #1990fe;
+      /* color: #1990fe; */
+      color: #008ba3;
       transition: all 100ms linear;
     }
   }

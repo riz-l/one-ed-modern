@@ -36,7 +36,7 @@ export default function Navigation() {
         <Wrapper>
           {/* Logo */}
           <Logo>
-            <span>OneED</span>
+            <span>One ED</span>
           </Logo>
 
           {/* Navigation Options */}

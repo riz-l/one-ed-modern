@@ -2,7 +2,7 @@
 import React from "react";
 
 // Import: Elements
-import { Container, Wrapper } from "./PatientList.elements";
+import { Container, Header, Wrapper } from "./PatientList.elements";
 
 // Import: Components
 import { PatientItem } from "../index";
@@ -12,9 +12,19 @@ export default function PatientList() {
   return (
     <>
       <Container data-test-id={"patientList"}>
-        <Wrapper>
-          <h1>Patient List</h1>
+        <Header>
+          <h2>Patient List</h2>
+        </Header>
 
+        <Wrapper>
+          <PatientItem />
+          <PatientItem />
+          <PatientItem />
+          <PatientItem />
+          <PatientItem />
+          <PatientItem />
+          <PatientItem />
+          <PatientItem />
           <PatientItem />
         </Wrapper>
       </Container>
