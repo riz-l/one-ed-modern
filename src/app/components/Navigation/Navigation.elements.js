@@ -4,7 +4,7 @@ import styled from "styled-components/macro";
 // Element: Container
 export const Container = styled.div`
   background-color: #ffffff;
-  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  /* border-right: 1px solid rgba(0, 0, 0, 0.1); */
   height: 100%;
   min-height: 100vh;
   width: 100%;
