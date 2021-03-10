@@ -7,7 +7,8 @@ export const Container = styled.div`
   max-height: calc(100vh - 80px);
   min-height: calc(100vh - 80px);
   overflow-y: auto;
-
+  scrollbar-color: #2a2a2e #c1c1c1;
+  scrollbar-width: thin;
   width: 100%;
 `;
 
