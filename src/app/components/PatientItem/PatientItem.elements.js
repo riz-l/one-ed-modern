@@ -7,7 +7,7 @@ export const Container = styled.article`
   border: 1px solid #edeff2;
   border-radius: 8px;
   cursor: pointer;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.8rem;
   transition: all 100ms linear;
   width: 100%;
 

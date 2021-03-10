@@ -71,7 +71,7 @@ export const UserIcon = styled.div`
   margin-right: 0.8rem;
 
   & svg {
-    fill: #6b7a99;
+    fill: #c3cad9;
   }
 `;
 

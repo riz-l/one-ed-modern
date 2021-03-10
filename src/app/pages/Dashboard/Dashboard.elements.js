@@ -19,7 +19,7 @@ export const Layout = styled.main`
 `;
 
 // Element: ListContainer
-export const ListContainer = styled.section`
+export const ListContainer = styled.div`
   align-items: center;
   display: flex;
   flex: 1.5;
@@ -31,15 +31,64 @@ export const ListContainer = styled.section`
 `;
 
 // Element: WorkflowContainer
-export const WorkflowContainer = styled.section`
+export const WorkflowContainer = styled.div`
   align-items: center;
-  background-color: rgba(255, 0, 0, 0.1);
-  /* background-color: #f7f8fa; */
+  /* background-color: rgba(255, 0, 0, 0.1); */
+  background-color: #f7f8fa;
   display: flex;
   flex: 3;
   height: 100%;
   max-height: calc(100vh - 80px);
   min-height: calc(100vh - 80px);
+  justify-content: center;
+  width: 100%;
+`;
+
+// Element: WorkflowWrapper
+export const WorkflowWrapper = styled.div`
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+`;
+
+// Element: SummaryContainer
+export const SummaryContainer = styled.div`
+  background: magenta;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+`;
+
+// Element: SummaryBottom
+export const SummaryBottom = styled.div`
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+`;
+
+// Element: StreamContainer
+export const StreamContainer = styled.div`
+  background: yellow;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+`;
+
+// Element: SuggestionContainer
+export const SuggestionContainer = styled.div`
+  background: aqua;
+  align-items: center;
+  display: flex;
+  height: 100%;
   justify-content: center;
   width: 100%;
 `;

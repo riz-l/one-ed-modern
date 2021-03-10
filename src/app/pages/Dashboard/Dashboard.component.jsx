@@ -6,11 +6,23 @@ import {
   Container,
   Layout,
   ListContainer,
+  SummaryBottom,
+  SummaryContainer,
+  StreamContainer,
+  SuggestionContainer,
   WorkflowContainer,
+  WorkflowWrapper,
 } from "./Dashboard.elements";
 
 // Import: Components
-import { Header, Navigation, PatientList } from "../../components";
+import {
+  Header,
+  Navigation,
+  PatientList,
+  PatientStream,
+  PatientSuggestion,
+  PatientSummary,
+} from "../../components";
 
 // Page: Dashboard
 export default function Dashboard() {
@@ -26,7 +38,23 @@ export default function Dashboard() {
             <PatientList />
           </ListContainer>
 
-          <WorkflowContainer>b</WorkflowContainer>
+          <WorkflowContainer>
+            <WorkflowWrapper>
+              <SummaryContainer>
+                <PatientSummary />
+              </SummaryContainer>
+
+              <SummaryBottom>
+                <StreamContainer>
+                  <PatientStream />
+                </StreamContainer>
+
+                <SuggestionContainer>
+                  <PatientSuggestion />
+                </SuggestionContainer>
+              </SummaryBottom>
+            </WorkflowWrapper>
+          </WorkflowContainer>
         </Layout>
       </Container>
     </>
