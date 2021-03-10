@@ -58,7 +58,7 @@ export const OptionItem = styled.div`
   cursor: pointer;
   display: flex;
   justify-content: flex-start;
-  padding: 0.6rem 0.8rem;
+  padding: 0.4rem 0.8rem;
   transition: all 100ms linear;
   width: 100%;
 
@@ -115,7 +115,7 @@ export const SettingsItem = styled.div`
   cursor: pointer;
   display: flex;
   justify-content: flex-start;
-  padding: 0.6rem 0.8rem;
+  padding: 0.4rem 0.8rem;
   transition: all 100ms linear;
   width: 100%;
 
