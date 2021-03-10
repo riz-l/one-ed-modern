@@ -4,27 +4,30 @@ import React from "react";
 // Import: Elements
 import {
   Container,
-  ListWrapper,
-  SummaryWrapper,
-  Wrapper,
+  Layout,
+  ListContainer,
+  WorkflowContainer,
 } from "./Dashboard.elements";
 
 // Import: Components
-import { PatientList, PatientTable, PatientSummary } from "../../components";
+import { Header, Navigation, PatientList } from "../../components";
 
 // Page: Dashboard
 export default function Dashboard() {
   return (
     <>
       <Container data-testid={"dashboard"}>
-        <Wrapper>
-          <ListWrapper>
-            {/* <PatientTable /> */}
-            <PatientList />
-          </ListWrapper>
+        <Header />
 
-          <SummaryWrapper>{/* <PatientSummary /> */}</SummaryWrapper>
-        </Wrapper>
+        <Layout>
+          <Navigation />
+
+          <ListContainer>
+            <PatientList />
+          </ListContainer>
+
+          <WorkflowContainer>b</WorkflowContainer>
+        </Layout>
       </Container>
     </>
   );

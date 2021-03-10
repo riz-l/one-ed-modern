@@ -2,12 +2,11 @@
 import styled from "styled-components/macro";
 
 // Element: Container
-export const Container = styled.div`
+export const Container = styled.nav`
   background-color: #ffffff;
   border-right: 1px solid rgba(0, 0, 0, 0.1);
-  height: 100%;
-  min-height: 100vh;
-  width: 100%;
+  height: calc(100vh - 80px);
+  width: 300px;
 `;
 
 // Element: Wrapper
@@ -16,39 +15,22 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
-  min-height: 100vh;
-  justify-content: flex-start;
-  padding: 1rem;
-`;
-
-// Element: Logo
-export const Logo = styled.div`
-  align-items: center;
-  display: flex;
-  justify-content: flex-start;
-  padding: 0 0.8rem;
+  justify-content: center;
+  padding: 1rem 2rem;
   width: 100%;
-
-  & span {
-    font-size: 2rem;
-    font-weight: 600;
-    text-transform: uppercase;
-  }
 `;
 
 // Element: Options
-export const Options = styled.nav`
+export const Options = styled.div`
   align-items: flex-start;
   display: flex;
   flex-direction: column;
-  height: 100%;
   justify-content: space-between;
-  margin-top: 2rem;
   width: 100%;
 `;
 
-// Element: OptionContainer
-export const OptionContainer = styled.div`
+// Element: OptionsContainer
+export const OptionsContainer = styled.div`
   align-items: flex-start;
   display: flex;
   flex-direction: column;
@@ -59,9 +41,7 @@ export const OptionContainer = styled.div`
 
 // Element: OptionHeading
 export const OptionHeading = styled.span`
-  /* color: #515a62; */
-  color: #00687a;
-  padding: 0.4rem 0.8rem;
+  padding: 0.4rem 0;
   font-weight: 500;
   text-transform: uppercase;
 `;
@@ -70,7 +50,6 @@ export const OptionHeading = styled.span`
 export const OptionItem = styled.div`
   align-items: center;
   background-color: #ffffff;
-  border-radius: 8px;
   cursor: pointer;
   display: flex;
   justify-content: flex-start;
@@ -79,7 +58,6 @@ export const OptionItem = styled.div`
   width: 100%;
 
   & svg {
-    /* fill: #8a8a8a; */
     fill: #44444b;
     height: 20px;
     margin-right: 0.8rem;
@@ -87,18 +65,14 @@ export const OptionItem = styled.div`
   }
 
   & span {
-    /* color: #8a8a8a; */
     color: #44444b;
     transition: all 100ms linear;
   }
-
   &:hover {
-    /* background-color: #f7f7f7; */
     background-color: #e5f3f6;
     transition: all 100ms linear;
 
     & span {
-      /* color: #1990fe; */
       color: #008ba3;
       transition: all 100ms linear;
     }
@@ -120,7 +94,6 @@ export const Settings = styled.div`
 export const SettingsItem = styled.div`
   align-items: center;
   background-color: #ffffff;
-  border-radius: 8px;
   cursor: pointer;
   display: flex;
   justify-content: flex-start;
@@ -129,7 +102,6 @@ export const SettingsItem = styled.div`
   width: 100%;
 
   & svg {
-    /* fill: #8a8a8a; */
     fill: #44444b;
     height: 20px;
     margin-right: 0.8rem;
@@ -137,18 +109,14 @@ export const SettingsItem = styled.div`
   }
 
   & span {
-    /* color: #8a8a8a; */
     color: #44444b;
     transition: all 100ms linear;
   }
-
   &:hover {
-    /* background-color: #f7f7f7; */
     background-color: #e5f3f6;
     transition: all 100ms linear;
 
     & span {
-      /* color: #1990fe; */
       color: #008ba3;
       transition: all 100ms linear;
     }

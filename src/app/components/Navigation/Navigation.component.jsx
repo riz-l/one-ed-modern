@@ -11,18 +11,16 @@ import { ReactComponent as AssessmentsObservationsIcon } from "../../../assets/i
 import { ReactComponent as AssessmentsSeenIcon } from "../../../assets/img/icon/assessments-seen.svg";
 import { ReactComponent as AssessmentsClinicalIcon } from "../../../assets/img/icon/assessments-clinical.svg";
 import { ReactComponent as AssessmentsViewIcon } from "../../../assets/img/icon/assessments-view.svg";
-import { ReactComponent as TrainingGuidelinesIcon } from "../../../assets/img/icon/training-guidelines.svg";
 import { ReactComponent as SettingsSettingsIcon } from "../../../assets/img/icon/settings-settings.svg";
 import { ReactComponent as SettingsLogoutIcon } from "../../../assets/img/icon/settings-logout.svg";
 
 // Import: Elements
 import {
   Container,
-  Logo,
-  OptionContainer,
   OptionHeading,
   OptionItem,
   Options,
+  OptionsContainer,
   Settings,
   SettingsItem,
   Wrapper,
@@ -34,15 +32,9 @@ export default function Navigation() {
     <>
       <Container data-testid={"navigation"}>
         <Wrapper>
-          {/* Logo */}
-          <Logo>
-            <span>One ED</span>
-          </Logo>
-
-          {/* Navigation Options */}
           <Options>
             {/* Ward */}
-            <OptionContainer>
+            <OptionsContainer>
               <OptionHeading>Ward</OptionHeading>
               <OptionItem>
                 <WardDashboardIcon />
@@ -53,10 +45,10 @@ export default function Navigation() {
                 <WardEDIcon />
                 <span>ED Overview</span>
               </OptionItem>
-            </OptionContainer>
+            </OptionsContainer>
 
             {/* Patient */}
-            <OptionContainer>
+            <OptionsContainer>
               <OptionHeading>Patient</OptionHeading>
               <OptionItem>
                 <PatientOverviewIcon />
@@ -67,10 +59,10 @@ export default function Navigation() {
                 <PatientCasIcon />
                 <span>CAS Card</span>
               </OptionItem>
-            </OptionContainer>
+            </OptionsContainer>
 
             {/* Assessments */}
-            <OptionContainer>
+            <OptionsContainer>
               <OptionHeading>Assessments</OptionHeading>
               <OptionItem>
                 <AssessmentsTriageIcon />
@@ -96,16 +88,7 @@ export default function Navigation() {
                 <AssessmentsViewIcon />
                 <span>View Seen</span>
               </OptionItem>
-            </OptionContainer>
-
-            {/* Training */}
-            <OptionContainer>
-              <OptionHeading>Training</OptionHeading>
-              <OptionItem>
-                <TrainingGuidelinesIcon />
-                <span>Guidelines</span>
-              </OptionItem>
-            </OptionContainer>
+            </OptionsContainer>
           </Options>
 
           <Settings>

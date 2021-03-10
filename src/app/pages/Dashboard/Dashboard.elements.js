@@ -3,35 +3,43 @@ import styled from "styled-components/macro";
 
 // Element: Container
 export const Container = styled.div`
-  height: auto;
-  max-height: calc(100vh - 78.4px);
-  min-height: calc(100vh - 78.4px);
+  height: 100%;
+  max-height: 100vh;
+  min-height: 100vh;
   width: 100%;
 `;
 
-// Element: Wrapper
-export const Wrapper = styled.div`
-  align-items: center;
+// Element: Layout
+export const Layout = styled.main`
   display: flex;
   height: 100%;
+  max-height: calc(100vh - 80px);
+  min-height: calc(100vh - 80px);
+  width: 100%;
+`;
+
+// Element: ListContainer
+export const ListContainer = styled.section`
+  align-items: center;
+  /* background-color: orangered; */
+  display: flex;
+  flex: 1.25;
+  height: 100%;
+  max-height: calc(100vh - 80px);
+  min-height: calc(100vh - 80px);
   justify-content: center;
   width: 100%;
 `;
 
-// Element: ListWrapper
-export const ListWrapper = styled.div`
-  flex: 0.5;
+// Element: WorkflowContainer
+export const WorkflowContainer = styled.section`
+  align-items: center;
+  background-color: rgba(255, 0, 0, 0.1);
+  display: flex;
+  flex: 3;
   height: 100%;
-  max-height: calc(100vh - 10vh);
-  min-height: calc(100vh - 10vh);
-  width: 100%;
-`;
-
-// Element: SummaryWrapper
-export const SummaryWrapper = styled.div`
-  flex: 1;
-  height: 100%;
-  max-height: calc(100vh - 10vh);
-  min-height: calc(100vh - 10vh);
+  max-height: calc(100vh - 80px);
+  min-height: calc(100vh - 80px);
+  justify-content: center;
   width: 100%;
 `;

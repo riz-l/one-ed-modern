@@ -3,15 +3,15 @@ import { render } from "@testing-library/react";
 import { BrowserRouter as Router } from "react-router-dom";
 
 // Import: Pages
-import Dashboard from "./Dashboard.component";
+import Home from "./Home.component";
 
-// Test: Checks that Dashboard renders
-it("checkDashboardRender", () => {
+// Test: Checks that Home renders
+it("checkHomeRender", () => {
   const { queryByTestId } = render(
     <Router>
-      <Dashboard />
+      <Home />
     </Router>
   );
-  const page = queryByTestId("dashboard");
+  const page = queryByTestId("home");
   expect(page).toBeTruthy();
 });

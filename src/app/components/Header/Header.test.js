@@ -2,16 +2,16 @@
 import { render } from "@testing-library/react";
 import { BrowserRouter as Router } from "react-router-dom";
 
-// Import: Component
-import Navigation from "./Navigation.component";
+// Import: Components
+import Header from "./Header.component";
 
-// Test: Checks that Navigation renders
-it("checkNavigationRender", () => {
+// Test: Checks that Header renders
+it("checkHeaderRender", () => {
   const { queryByTestId } = render(
     <Router>
-      <Navigation />
+      <Header />
     </Router>
   );
-  const component = queryByTestId("navigation");
+  const component = queryByTestId("header");
   expect(component).toBeTruthy();
 });
