@@ -28,6 +28,7 @@ export const Header = styled.div`
   align-items: flex-start;
   /* background-color: #ffffff; */
   background-color: #f7f8fa;
+  /* box-shadow: 0 0 20px #edeff2; */
   display: flex;
   flex-direction: column;
   height: 100px;

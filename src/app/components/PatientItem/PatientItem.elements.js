@@ -96,7 +96,7 @@ export const DetailsItem = styled.div`
 export const DetailsHeading = styled.span`
   color: #4d5e80;
   font-size: 0.8rem;
-  font-weight: 500;
+  font-weight: 600;
 `;
 
 // Element: Details
