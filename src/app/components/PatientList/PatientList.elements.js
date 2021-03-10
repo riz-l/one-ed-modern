@@ -32,7 +32,7 @@ export const Header = styled.div`
   flex-direction: column;
   height: 100px;
   justify-content: center;
-  padding: 2rem;
+  padding: 1.8rem 2rem 2rem 2rem;
   position: sticky;
   -webkit-position: sticky;
   top: 0;
