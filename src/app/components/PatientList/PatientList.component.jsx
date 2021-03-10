@@ -9,6 +9,9 @@ import {
   Wrapper,
 } from "./PatientList.elements";
 
+// Import: Components
+import { PatientItem } from "../index";
+
 // Component: PatientList
 export default function PatientList() {
   return (
@@ -21,30 +24,16 @@ export default function PatientList() {
 
         <Wrapper>
           <ItemContainer>
-            <div>a</div>
-            <div>a</div>
-            <div>a</div>
-            <div>a</div>
-            <div>a</div>
-            <div>a</div>
-            <div>a</div>
-            <div>a</div>
-            <div>a</div>
-            <div>a</div>
-            <div>a</div>
-            <div>a</div>
-            <div>a</div>
-            <div>a</div>
-            <div>a</div>
-            <div>a</div>
-            <div>a</div>
-            <div>a</div>
-            <div>a</div>
-            <div>a</div>
-            <div>a</div>
-            <div>a</div>
-            <div>a</div>
-            <div>a</div>
+            <PatientItem />
+            <PatientItem />
+            <PatientItem />
+            <PatientItem />
+            <PatientItem />
+            <PatientItem />
+            <PatientItem />
+            <PatientItem />
+            <PatientItem />
+            <PatientItem />
           </ItemContainer>
         </Wrapper>
       </Container>

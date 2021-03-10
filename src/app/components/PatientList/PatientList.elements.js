@@ -53,15 +53,4 @@ export const ItemContainer = styled.div`
   justify-content: flex-start;
   padding: 1rem 2rem;
   width: 100%;
-
-  & div {
-    align-items: center;
-    background-color: rgba(0, 211, 255, 0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-bottom: 0.4rem;
-    padding: 2rem;
-    width: 100%;
-  }
 `;
