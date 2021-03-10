@@ -88,7 +88,7 @@ export const DetailsItem = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.8rem;
   width: auto;
 `;
 
