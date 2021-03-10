@@ -3,8 +3,10 @@ import styled from "styled-components/macro";
 
 // Element: Container
 export const Container = styled.nav`
-  background-color: #ffffff;
-  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  /* background-color: #ffffff; */
+  background-color: #f7f8fa;
+  /* border-right: 1px solid rgba(0, 0, 0, 0.1); */
+  border-right: 1px solid #edeff2;
   height: calc(100vh - 80px);
   width: 300px;
 `;
@@ -41,6 +43,7 @@ export const OptionsContainer = styled.div`
 
 // Element: OptionHeading
 export const OptionHeading = styled.span`
+  color: #6b7a99;
   padding: 0.4rem 0;
   font-weight: 500;
   text-transform: uppercase;
@@ -49,7 +52,9 @@ export const OptionHeading = styled.span`
 // Element: OptionItem
 export const OptionItem = styled.div`
   align-items: center;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
+  background-color: #f7f8fa;
+  border-radius: 8px;
   cursor: pointer;
   display: flex;
   justify-content: flex-start;
@@ -58,22 +63,33 @@ export const OptionItem = styled.div`
   width: 100%;
 
   & svg {
-    fill: #44444b;
+    /* fill: #44444b; */
+    fill: #c3cad9;
     height: 20px;
     margin-right: 0.8rem;
+    transition: all 100ms linear;
     width: 20px;
   }
 
   & span {
-    color: #44444b;
+    /* color: #44444b; */
+    /* color: #c3cad9; */
+    color: #6b7a99;
     transition: all 100ms linear;
   }
+
   &:hover {
-    background-color: #e5f3f6;
+    /* background-color: #e5f3f6; */
+    background-color: #e6e9ef;
     transition: all 100ms linear;
 
+    & svg {
+      fill: #6b7a99;
+      transition: all 100ms linear;
+    }
+
     & span {
-      color: #008ba3;
+      color: #4d5e80;
       transition: all 100ms linear;
     }
   }
@@ -93,7 +109,9 @@ export const Settings = styled.div`
 // Element: SettingsItem
 export const SettingsItem = styled.div`
   align-items: center;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
+  background-color: #f7f8fa;
+  border-radius: 8px;
   cursor: pointer;
   display: flex;
   justify-content: flex-start;
@@ -102,22 +120,33 @@ export const SettingsItem = styled.div`
   width: 100%;
 
   & svg {
-    fill: #44444b;
+    /* fill: #44444b; */
+    fill: #c3cad9;
     height: 20px;
     margin-right: 0.8rem;
+    transition: all 100ms linear;
     width: 20px;
   }
 
   & span {
-    color: #44444b;
+    /* color: #44444b; */
+    color: #6b7a99;
     transition: all 100ms linear;
   }
+
   &:hover {
-    background-color: #e5f3f6;
+    /* background-color: #e5f3f6; */
+    background-color: #e6e9ef;
     transition: all 100ms linear;
 
+    & svg {
+      fill: #6b7a99;
+      transition: all 100ms linear;
+    }
+
     & span {
-      color: #008ba3;
+      /* color: #008ba3; */
+      color: #4d5e80;
       transition: all 100ms linear;
     }
   }

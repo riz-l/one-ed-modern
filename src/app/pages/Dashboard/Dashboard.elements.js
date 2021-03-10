@@ -21,9 +21,8 @@ export const Layout = styled.main`
 // Element: ListContainer
 export const ListContainer = styled.section`
   align-items: center;
-  /* background-color: orangered; */
   display: flex;
-  flex: 1.25;
+  flex: 1.5;
   height: 100%;
   max-height: calc(100vh - 80px);
   min-height: calc(100vh - 80px);
@@ -35,6 +34,7 @@ export const ListContainer = styled.section`
 export const WorkflowContainer = styled.section`
   align-items: center;
   background-color: rgba(255, 0, 0, 0.1);
+  /* background-color: #f7f8fa; */
   display: flex;
   flex: 3;
   height: 100%;

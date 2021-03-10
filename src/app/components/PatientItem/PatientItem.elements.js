@@ -4,15 +4,15 @@ import styled from "styled-components/macro";
 // Element: Container
 export const Container = styled.article`
   background-color: #ffffff;
-  /* border: 1px solid rgba(0, 0, 0, 0.1); */
+  border: 1px solid #edeff2;
+  border-radius: 8px;
   cursor: pointer;
   margin-bottom: 0.4rem;
-  padding: 1rem;
   transition: all 100ms linear;
   width: 100%;
 
   &:hover {
-    background-color: rgba(0, 211, 255, 0.1);
+    box-shadow: 0 0 20px #edeff2;
     transition: all 100ms linear;
   }
 `;
@@ -22,31 +22,85 @@ export const Wrapper = styled.div`
   align-items: center;
   display: flex;
   height: 100%;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 1rem;
 `;
 
 // Element: IconContainer
 export const IconContainer = styled.div`
   align-items: center;
-  /* background-color: red; */
   flex-direction: column;
   display: flex;
   height: 100%;
   justify-content: center;
-  margin-right: 0.8rem;
+  padding: 1rem;
+
+  & svg {
+    fill: #c3cad9;
+    height: 45px;
+    margin-bottom: 0.8rem;
+    width: 45px;
+  }
+
+  & span {
+    color: #6b7a99;
+    font-weight: 500;
+  }
 `;
 
 // Element: DetailsContainer
 export const DetailsContainer = styled.div`
-  align-items: center;
-  /* background-color: red; */
-  flex-direction: column;
+  align-items: flex-start;
   display: flex;
+  flex-direction: column;
   height: 100%;
   justify-content: center;
-  margin-right: 0.8rem;
+  width: 100%;
+`;
 
-  &:last-of-type {
-    margin-right: 0;
+// Element: DetailsWrapper
+export const DetailsWrapper = styled.div`
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: flex-start;
+  width: 100%;
+`;
+
+// Element: DetailsColumn
+export const DetailsColumn = styled.div`
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  padding: 0 1rem;
+  width: auto;
+
+  &:nth-of-type(1) {
+    margin-right: 1rem;
   }
+`;
+
+// Element: DetailsItem
+export const DetailsItem = styled.div`
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 0.4rem;
+  width: auto;
+`;
+
+// Element: DetailsHeading
+export const DetailsHeading = styled.span`
+  color: #4d5e80;
+  font-size: 0.8rem;
+  font-weight: 500;
+`;
+
+// Element: Details
+export const Details = styled.span`
+  color: #4d5e80;
+  font-size: 1rem;
 `;

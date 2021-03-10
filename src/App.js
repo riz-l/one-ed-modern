@@ -23,7 +23,7 @@ export default function App() {
 
 // Element: Container
 const Container = styled.div`
-  /* background-color: #f7f7f7; */
+  background-color: #f7f8fa;
   height: 100%;
   max-height: 100vh;
   min-height: 100vh;

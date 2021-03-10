@@ -31,9 +31,6 @@ export default function PatientList() {
             <PatientItem />
             <PatientItem />
             <PatientItem />
-            <PatientItem />
-            <PatientItem />
-            <PatientItem />
           </ItemContainer>
         </Wrapper>
       </Container>

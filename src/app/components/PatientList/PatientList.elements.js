@@ -3,18 +3,20 @@ import styled from "styled-components/macro";
 
 // Element: Container
 export const Container = styled.div`
+  background-color: #f7f8fa;
   height: 100%;
   max-height: calc(100vh - 80px);
   min-height: calc(100vh - 80px);
   overflow-y: auto;
-  scrollbar-color: #2a2a2e #c1c1c1;
+  scrollbar-color: #c3cad9 #edeff2;
   scrollbar-width: thin;
   width: 100%;
 `;
 
 // Element: Wrapper
 export const Wrapper = styled.div`
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
+  background-color: #f7f8fa;
   /* border-radius: 20px;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15); */
   height: 100%;
@@ -24,7 +26,8 @@ export const Wrapper = styled.div`
 // Element: Header
 export const Header = styled.div`
   align-items: flex-start;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
+  background-color: #f7f8fa;
   display: flex;
   flex-direction: column;
   height: 100px;
@@ -36,11 +39,13 @@ export const Header = styled.div`
   width: 100%;
 
   & h2 {
+    color: #4d5e80;
     font-size: 1.6rem;
     font-weight: 500;
   }
 
   & span {
+    color: #6b7a99;
     font-size: 0.8rem;
   }
 `;

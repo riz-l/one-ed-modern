@@ -3,8 +3,9 @@ import styled from "styled-components/macro";
 
 // Element: Container
 export const Container = styled.header`
-  background-color: #ffffff;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #f7f8fa;
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
+  border-bottom: 1px solid #edeff2;
   height: 80px;
   min-height: 80px;
   max-height: 80px;
@@ -37,7 +38,8 @@ export const Logo = styled.div`
   padding: 2rem;
 
   & span {
-    color: #2a2a2e;
+    /* color: #2a2a2e; */
+    color: #4d5e80;
     font-size: 2rem;
     font-weight: 600;
   }
@@ -46,7 +48,7 @@ export const Logo = styled.div`
 // Element: UserContainer
 export const UserContainer = styled.div`
   align-items: center;
-  background-color: #ffffff;
+  background-color: #f7f8fa;
   cursor: pointer;
   display: flex;
   height: 100%;
@@ -55,7 +57,7 @@ export const UserContainer = styled.div`
   transition: all 100ms linear;
 
   &:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: #e6e9ef;
     transition: all 100ms linear;
   }
 `;
@@ -67,6 +69,10 @@ export const UserIcon = styled.div`
   max-height: 80px;
   justify-content: center;
   margin-right: 0.8rem;
+
+  & svg {
+    fill: #6b7a99;
+  }
 `;
 
 // Element: UserDetails
@@ -79,12 +85,14 @@ export const UserDetails = styled.div`
 
   & span {
     &:nth-child(1) {
+      color: #6b7a99;
       font-size: 1.2rem;
       font-weight: 500;
       margin-bottom: -0.2rem;
     }
 
     &:nth-child(2) {
+      color: #6b7a99;
       font-size: 0.8rem;
     }
   }
