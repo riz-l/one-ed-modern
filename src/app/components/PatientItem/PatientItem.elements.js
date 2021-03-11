@@ -41,11 +41,6 @@ export const IconContainer = styled.div`
     margin-bottom: 0.8rem;
     width: 45px;
   }
-
-  & span {
-    color: #6b7a99;
-    font-weight: 500;
-  }
 `;
 
 // Element: DetailsContainer
@@ -87,8 +82,8 @@ export const DetailsRow = styled.div`
   align-items: flex-start;
   display: flex;
   height: 100%;
-  justify-content: center;
-  width: auto;
+  justify-content: space-between;
+  width: 100%;
 `;
 
 // Element: DetailsItem
@@ -98,6 +93,7 @@ export const DetailsItem = styled.div`
   flex-direction: column;
   justify-content: center;
   margin-bottom: 0.8rem;
+  margin-right: 1rem;
   width: auto;
 `;
 

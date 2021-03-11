@@ -26,7 +26,8 @@ export default function PatientItem() {
         <Wrapper>
           <IconContainer>
             <UserSvg />
-            <span>A&amp;E</span>
+            <DetailsHeading>NEWS</DetailsHeading>
+            <Details>2</Details>
           </IconContainer>
 
           <DetailsContainer>
@@ -41,7 +42,7 @@ export default function PatientItem() {
 
                 <DetailsColumn>
                   <DetailsItem>
-                    <DetailsHeading>Condition</DetailsHeading>
+                    <DetailsHeading>Complaint</DetailsHeading>
                     <Details>A00 - Cardiac arrest</Details>
                   </DetailsItem>
                 </DetailsColumn>
@@ -54,8 +55,12 @@ export default function PatientItem() {
                     </DetailsItem>
 
                     <DetailsItem>
-                      <DetailsHeading>NEWS</DetailsHeading>
-                      <Details>2</Details>
+                      <DetailsHeading>Duration</DetailsHeading>
+                      <Details
+                        style={{ borderBottom: "2px solid rgba(255,0,0,0.6)" }}
+                      >
+                        154 minutes
+                      </Details>
                     </DetailsItem>
                   </DetailsRow>
                 </DetailsColumn>

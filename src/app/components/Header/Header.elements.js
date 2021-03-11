@@ -85,7 +85,7 @@ export const UserDetails = styled.div`
 
   & span {
     &:nth-child(1) {
-      color: #6b7a99;
+      color: #4d5e80;
       font-size: 1.2rem;
       font-weight: 500;
       margin-bottom: -0.2rem;
