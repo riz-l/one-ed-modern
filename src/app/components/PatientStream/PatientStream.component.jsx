@@ -9,7 +9,7 @@ export default function PatientStream() {
   return (
     <>
       <Container data-testid={"patientStream"}>
-        <h3>Patient Stream</h3>
+        {/* <h3>Patient Stream</h3> */}
       </Container>
     </>
   );

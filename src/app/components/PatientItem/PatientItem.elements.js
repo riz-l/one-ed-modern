@@ -29,8 +29,8 @@ export const Wrapper = styled.div`
 // Element: IconContainer
 export const IconContainer = styled.div`
   align-items: center;
-  flex-direction: column;
   display: flex;
+  flex-direction: column;
   height: 100%;
   justify-content: center;
   padding: 1rem;
@@ -106,6 +106,6 @@ export const DetailsHeading = styled.span`
 
 // Element: Details
 export const Details = styled.span`
-  color: #4d5e80;
+  color: #6b7a99;
   font-size: 1rem;
 `;
