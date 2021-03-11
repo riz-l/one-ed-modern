@@ -4,7 +4,7 @@ import styled from "styled-components/macro";
 // Element: Container
 export const Container = styled.div`
   background-color: #f7f8fa;
-  height: 100%;
+  height: auto;
   max-height: calc((100vh - 80px) / 2);
   min-height: calc((100vh - 80px) / 2);
   width: 100%;

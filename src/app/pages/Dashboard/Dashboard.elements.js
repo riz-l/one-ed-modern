@@ -4,8 +4,8 @@ import styled from "styled-components/macro";
 // Element: Container
 export const Container = styled.div`
   height: 100%;
-  max-height: 100vh;
-  min-height: 100vh;
+  max-height: 100%;
+  min-height: 100%;
   width: 100%;
 `;
 
@@ -56,7 +56,6 @@ export const WorkflowWrapper = styled.div`
 
 // Element: SummaryContainer
 export const SummaryContainer = styled.div`
-  background: magenta;
   align-items: center;
   display: flex;
   height: 100%;
@@ -75,7 +74,6 @@ export const SummaryBottom = styled.div`
 
 // Element: StreamContainer
 export const StreamContainer = styled.div`
-  background: yellow;
   align-items: center;
   display: flex;
   height: 100%;

@@ -93,7 +93,7 @@ export const DetailsItem = styled.div`
   flex-direction: column;
   justify-content: center;
   margin-bottom: 0.8rem;
-  margin-right: 1rem;
+  margin-right: 2rem;
   width: auto;
 `;
 

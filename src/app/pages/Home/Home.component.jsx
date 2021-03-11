@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <Container data-testid={"home"}>
         <h1>HOME</h1>
-        <Link to="/dashboard">Dashboard</Link>
+        <Link to="/one-ed/dashboard">Dashboard</Link>
       </Container>
     </>
   );

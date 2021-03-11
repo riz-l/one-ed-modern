@@ -1,5 +1,6 @@
 // Import: Packages
 import React from "react";
+import { Link } from "react-router-dom";
 
 // Import: Assets
 import { ReactComponent as WardDashboardIcon } from "../../../assets/img/icon/ward-dashboard.svg";
@@ -36,15 +37,19 @@ export default function Navigation() {
             {/* Ward */}
             <OptionsContainer>
               <OptionHeading>Ward</OptionHeading>
-              <OptionItem>
-                <WardDashboardIcon />
-                <span>Dashboard</span>
-              </OptionItem>
+              <Link to="/one-ed/dashboard">
+                <OptionItem>
+                  <WardDashboardIcon />
+                  <span>Dashboard</span>
+                </OptionItem>
+              </Link>
 
-              <OptionItem>
-                <WardEDIcon />
-                <span>ED Overview</span>
-              </OptionItem>
+              <Link to="/one-ed/ed-overview">
+                <OptionItem>
+                  <WardEDIcon />
+                  <span>ED Overview</span>
+                </OptionItem>
+              </Link>
             </OptionsContainer>
 
             {/* Patient */}

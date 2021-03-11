@@ -16,8 +16,6 @@ import {
 
 // Import: Components
 import {
-  Header,
-  Navigation,
   PatientList,
   PatientStream,
   PatientSuggestion,
@@ -29,11 +27,7 @@ export default function Dashboard() {
   return (
     <>
       <Container data-testid={"dashboard"}>
-        <Header />
-
         <Layout>
-          <Navigation />
-
           <ListContainer>
             <PatientList />
           </ListContainer>

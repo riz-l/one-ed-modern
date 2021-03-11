@@ -2,14 +2,19 @@
 import React from "react";
 
 // Import: Elements
-import { Container } from "./PatientSuggestion.elements";
+import { Container, Header, Wrapper } from "./PatientSuggestion.elements";
 
 // Component: PatientSuggestion
 export default function PatientSuggestion() {
   return (
     <>
       <Container data-testid={"patientSuggestion"}>
-        {/* <h3>Patient Suggestion</h3> */}
+        <Header>
+          <h2>Suggestions</h2>
+          <span>Proposed sections to complete</span>
+        </Header>
+
+        <Wrapper></Wrapper>
       </Container>
     </>
   );
