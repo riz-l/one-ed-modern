@@ -82,6 +82,15 @@ export const DetailsColumn = styled.div`
   }
 `;
 
+// Element: DetailsRow
+export const DetailsRow = styled.div`
+  align-items: flex-start;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: auto;
+`;
+
 // Element: DetailsItem
 export const DetailsItem = styled.div`
   align-items: flex-start;

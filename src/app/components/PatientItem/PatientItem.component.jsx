@@ -12,6 +12,7 @@ import {
   DetailsContainer,
   DetailsHeading,
   DetailsItem,
+  DetailsRow,
   DetailsWrapper,
   IconContainer,
   Wrapper,
@@ -31,6 +32,35 @@ export default function PatientItem() {
           <DetailsContainer>
             <DetailsWrapper>
               <DetailsColumn>
+                <DetailsColumn>
+                  <DetailsItem>
+                    <DetailsHeading>Name</DetailsHeading>
+                    <Details>Johnathan Smith Doe Black</Details>
+                  </DetailsItem>
+                </DetailsColumn>
+
+                <DetailsColumn>
+                  <DetailsItem>
+                    <DetailsHeading>Condition</DetailsHeading>
+                    <Details>A00 - Cardiac arrest</Details>
+                  </DetailsItem>
+                </DetailsColumn>
+
+                <DetailsColumn>
+                  <DetailsRow>
+                    <DetailsItem>
+                      <DetailsHeading>Age</DetailsHeading>
+                      <Details>34 years</Details>
+                    </DetailsItem>
+
+                    <DetailsItem>
+                      <DetailsHeading>NEWS</DetailsHeading>
+                      <Details>2</Details>
+                    </DetailsItem>
+                  </DetailsRow>
+                </DetailsColumn>
+              </DetailsColumn>
+              {/* <DetailsColumn>
                 <DetailsItem>
                   <DetailsHeading>Name</DetailsHeading>
                   <Details>John Smith</Details>
@@ -52,7 +82,7 @@ export default function PatientItem() {
                   <DetailsHeading>NEWS</DetailsHeading>
                   <Details>2</Details>
                 </DetailsItem>
-              </DetailsColumn>
+              </DetailsColumn> */}
             </DetailsWrapper>
           </DetailsContainer>
         </Wrapper>
